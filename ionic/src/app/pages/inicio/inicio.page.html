@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="cont">
+    <div class="login">
+      <h2>Login</h2>
+      <ion-item>
+        <ion-input label="Correo electronico" placeholder="Ingresar..."></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Contraseña" placeholder="Ingresar..."></ion-input>
+      </ion-item>
+      <div class="texx">
+        <p>Si tienes una cuenta </p><a (click)="change_to_regist()">registrate</a>
+      </div>
+      <ion-button expand="full" (click)="log()">Login</ion-button>
+    </div>
+    <div class="regist">
+      <h2>Registrarse</h2>
+      <ion-item>
+        <ion-input label="Nombre" placeholder="Ingresar..."></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Correo electronico" placeholder="Ingresar..."></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Telefono" placeholder="Ingresar..."></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Contraseña" placeholder="Ingresar..."></ion-input>
+      </ion-item>
+      <div class="ya">
+        <p>Si ya tienes una puedes </p><a (click)="change_to_login()">iniciar sesion</a>
+      </div>
+      <ion-button expand="full" (click)="log()">Registrarse</ion-button>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,29 @@
+.cont{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.login, .regist{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.login{
+    top: 0%;
+    transition: top 0.5s ease;
+}
+.regist{
+    top: 100%;
+    transition: top 0.5s ease;
+}
+
+.login.onn{
+    top: -100%;
+    transition: top 0.5s ease;
+}
+.regist.onn{
+    top: 0%;
+    transition: top 0.5s ease;
+}
